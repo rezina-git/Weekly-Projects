@@ -1,0 +1,182 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3%;
+    justify-content: center;
+}
+
+body {
+    background: white;
+}
+
+.nav a {
+    margin: 10px;
+    padding: 10px;
+    color: rgb(0, 0, 120);
+    text-align: center;
+    /* font: 1.2em sans-serif; */
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.image {
+    margin-top: 3%;
+    margin-left: 10%;
+    max-width: 1200px;
+    background: #f2f2f2;
+    overflow: auto;
+    justify-content: space-between;
+
+}
+
+.onerow {
+    float: left;
+    width: 33.3%;
+    justify-content: space-between;
+
+}
+
+.onerow img {
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .onerow {
+        width: 50%;
+        /* Adjust the width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .onerow {
+        width: 100%;
+        /* Make it full width on even smaller screens */
+    }
+}
+
+h1 {
+    margin-top: 3%;
+    text-align: center;
+}
+
+.underline {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+
+}
+
+.underline {
+    position: relative;
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    /* Adjust the distance of the underline as needed */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    /* Adjust the thickness of the underline as needed */
+    background-color: rgb(0, 0, 120);
+    /* Adjust the color of the underline as needed */
+}
+
+
+p {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: x-large;
+    color: rgb(14, 12, 12);
+}
+
+button {
+    width: 120px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-left: 45%;
+    background-color: #d3dce5;
+    border-width: 120px;
+    padding: 10px 10px 10px 10px;
+    border: solid rgb(0, 0, 120);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.box1 {
+    background-color: rgb(27, 27, 150);
+}
+
+.box2 {
+    background-color: rgb(16, 13, 13);
+}
+
+.box3 {
+    background-color: rgb(27, 27, 150);
+}
+
+.boxes p {
+    color: white;
+}
+
+.underline1 {
+    position: relative;
+}
+
+.underline1::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    /* Adjust the distance of the underline as needed */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    /* Adjust the thickness of the underline as needed */
+    background-color: rgb(0, 0, 120);
+    /* Adjust the color of the underline as needed */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    /* Adjust the gap as needed */
+}
+
+.grid-item {
+    background-color: rgb(212, 204, 204);
+    padding: 1em;
+    text-align: center;
+    color: rgb(0, 0, 120);
+    font-weight: bolder;
+    align-self: center;
+}
+
+i.fa-desktop {
+    margin-right: 10px;
+    font-size: 24px;
+    /* Adjust the margin to control the space between the icon and the text */
+}
+
+i.fa-aws {
+    margin-right: 10px;
+    font-size: 24px;
+}
